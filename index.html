@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUSSELL WINCKERS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MOBILE -->
+    <div id="mCharacter">
+        <img id="mCharacterSprite" src="images/mobile-characterSprite.png" class="left" height="100%" width="100%" alt="character">
+    </div>
+    <div id="mobile-container">
+        <div id="mobile-name"></div>
+        <div class="island"></div>
+        <!-- ABOUT ME -->
+        <div class="mobile-about"></div>
+        <div class="portalCliffAbout"></div>
+        <div class="skatePlank"></div>
+        <!-- fFood -->
+        <div class="favFood-mobile"></div>
+        <div class="sushiStand-mobile"></div>
+        <div class="tacoTruck-mobile"></div>
+
+        <!-- SKILLS -->
+        <div class="mobile-skills"></div>
+        <div class="portalCliffSkills"></div>
+
+
+        <div id="parallax-mobile">
+            <div id="wolken-mobile">
+                <div class="wolk een-mobile"></div>
+                <div class="wolk twee-mobile"></div>
+                <div class="wolk drie-mobile"></div>
+                <div class="wolk vier-mobile"></div>
+                <div class="wolk vijf-mobile"></div>
+            </div>
+        </div>
+    </div>
+    <!-- welkom -->
+    <div id="welcomeText"></div>
+
+
+
+
+<!-- DESKTOP -->
+    <div id="character">
+        <img id="character_spritesheet" class="face-right" src="images/animatedCharater.png" alt="character">
+    </div>
+    
+    <div id="outer-container">
+        <div id="container">
+            <div id="uitleg">SCROLL TO WALK</div>
+            <!-- Voorste layer -->
+            <div id="voorgrond">
+                <!-- Grond -->
+                <div class="grond1"></div>
+                <div class="grond2"></div>
+                <div class="grond3"></div>
+                <div class="grond4"></div>
+                <div class="grond5"></div>
+                <!-- Boomen en bosjes-->
+                <div class="bosGroen bosEen"></div>
+                <div class="boomGroen boomEen"></div>
+
+                <!-- Welkom screen -->
+                <div id="nameText"></div>
+
+                <!-- eerste level(about me) ////////////////////////////////////////////-->
+                <div class="portal1"></div>
+                <div class="textAbout"></div>
+                <div class="boomPaars"></div>
+                <!-- like to skate -->
+                <div class="billBoardSkate"></div>
+                <div class="skateLoop"></div>
+                <!-- Food stands -->
+                <div class="foodText"></div>
+                <div class="sushiStand"></div>
+                <div class="tacoStand"></div>
+
+                <div class="directionSign"></div>
+
+                <!-- Level 2(Skills) ///////////////////////////////////////////////////////////////////////-->
+                <div class="portal2"></div>
+                <div class="textSkills"></div>
+                <div class="languageSign"></div>
+                <div class="talenLijst"></div>
+                <div class="designText"></div>
+                <div class="designLijst"></div>
+
+                <!-- Level 3(Projects) ///////////////////////////////////////////////////////////////////////-->
+                <div class="portal3"></div>
+                <div class="textProjects"></div>
+                <div class="project projectEen">
+                    <div class="projectFrame">
+                        <h1 class="titel">Interactieve Map</h1><br><br>
+                        <p>Made using: HTML, CSS, Javascript<br>
+                        Made By: Russell</p>
+                        <img src="./projectImages/interactieveMap.png" alt="interactieveMap">
+                        <div><a href="https://87973.stu.sd-lab.nl/minor2/interactieve_map/html/" target="_blank">Take A Look</a></div>
+                    </div>
+                </div>
+                <div class="project projectTwee">
+                    <div class="projectFrame">
+                        <h1 class="titel">Candy Shop</h1><br><br>
+                        <p>Made using: HTML, CSS, Javascript, PHP, MySql<br>
+                        Made By: Russell, Tijn</p>
+                        <img src="./projectImages/deSnoepKoning.png" alt="De snoepKoning">
+                        <div><a href="https://87973.stu.sd-lab.nl/beroeps2/snoepkoning/SnoepkoningD/homepage.html" target="_blank">Take A Look</a></div>
+                    </div>
+                </div>
+                <div class="project projectDrie">
+                    <div class="projectFrame">
+                        <h1 class="titel">Amsterdam Lght Festival</h1><br><br>
+                        <p>Made using: HTML, CSS, Javascript<br>
+                        Made By: Russell, Thomas</p>
+                        <img src="./projectImages/amsterdamFestival.png" alt="amsterdamFestival">
+                        <div><a href="https://87973.stu.sd-lab.nl/beroeps2/amsterdamLightFestival/home/" target="_blank">Take A Look</a></div>
+                    </div>
+                </div>
+                <div class="project projectVier">
+                    <div class="projectFrame">
+                        <h1 class="titel">Trampoline Park Timer</h1><br><br>
+                        <p>Made using: HTML, CSS, Javascript<br>
+                        Made By: Russell</p>
+                        <img src="./projectImages/trampoline.png" alt="trampoline park timer">
+                        <div><a href="https://87973.stu.sd-lab.nl/digitalsig2/jump_around/" target="_blank">Take A Look</a></div>
+                    </div>
+                </div>
+
+                <!-- Contact Me /////////////////////////////////////////////////////////////////// -->
+                <div class="portal4"></div>
+                <div class="contactText"></div>
+                <div class="finish"></div>
+                <div class="cactus"></div>
+                <div class="contact">
+                    
+                    <form action="stuur-email.php" id="contactForm" class="contactForm" method="post">
+                        <div><h1>Contact</h1></div>
+                        
+                        <div><label for="email">Your Email</label>
+                        <input type="email" name="email" id="email" required></div>
+                        
+                        <div><label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" required></div>
+                        <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" class="message" name="message" id="message" cols="30" rows="3" required></textarea>
+                        </div>
+                        <div>
+                        <input type="submit" name="submit" value="send!" class="submitContact">
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Parallax effect -->
+            <div class="layers">
+                <!-- background layer -->
+                <div class="layer background">
+                    <div class="luchtbalon"></div>
+                    <div class="towersGem"></div>
+                    <div class="mountainEen"></div>
+                    <div class="mountainTwee"></div>
+                    <div class="factory1"></div>
+                    <div class="palmTree"></div>
+
+                    <!-- Projects -->
+                    <div class="igloo"></div>
+                    <div class="iceMountainEen"></div>
+                    <div class="iceMountainTwee"></div>
+
+                    <!-- Contact -->
+                    <div class="desertMountain"></div>
+                    
+
+
+                </div>
+                <div class="layer background2">
+                    <div class="factoryTruck"></div>
+                    <div class="factoryCar"></div>
+                    <div class="factoryTruck2"></div>
+                </div>
+                <!-- Wolken -->
+                <div class="layer wolken">
+                    <div class="wolk een"></div>
+                    <div class="wolk twee"></div>
+                    <div class="wolk drie"></div>
+                    <div class="wolk vier"></div>
+                    <div class="wolk vijf"></div>
+                    <div class="wolk zes"></div>
+                    <div class="wolk zeven"></div>
+                    <div class="wolk acht"></div>
+                    <div class="wolk negen"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

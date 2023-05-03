@@ -1,0 +1,250 @@
+@media only screen and (max-width: 1050px) {
+    body {
+
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    #character {
+        display: none;
+    }
+
+    #outer-container {
+        display: none;
+    }
+
+    /* object size */
+    :root {
+        --name-size: 4;
+        --mobile-character: 6;
+        --mobile-wolk: 0.8;
+        --island-size: 7;
+
+        /* about */
+        --mobileAbout-size: 5.5;
+        --cliff-size: 8;
+        --plankSkate-size: 6;
+        --foodSign-size: 7;
+        --foodStand-size: 6.1;
+
+        /* skills */
+        --mobileSkills-size: 5.8;
+    }
+
+
+    #mobile-container {
+        height: 800vh;
+        background: linear-gradient(to top, rgb(133, 221, 243), rgb(72, 233, 245));
+    }
+
+    #welcomeText {
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+    }
+
+    #mobile-name {
+        transition: 1s;
+        position: absolute;
+        width: calc(131px * var(--name-size));
+        height: calc(44px * var(--name-size));
+        top: -200px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-image: url(images/introName.png);
+        background-repeat: no-repeat;
+        background-size: calc(131px * var(--name-size)) calc(44px * var(--name-size));
+        z-index: 10;
+    }
+
+    #mCharacter {
+        position: fixed;
+        width: calc(28px * var(--mobile-character));
+        height: calc(99px * var(--mobile-character));
+        overflow: hidden;
+        display: block;
+        z-index: 7;
+        top: -200vh;
+        left: 60vw;
+        transform: translate(-50%, 0);
+        transition: 1s;
+    }
+
+    #mCharacterSprite {
+        position: absolute;
+        width: calc(56px * var(--mobile-character));
+    }
+
+    /* naar andere kant kijken */
+    .right {
+        left: calc(-28px * var(--mobile-character));
+    }
+
+    .left {
+        left: calc(0 * var(--mobile-character));
+    }
+
+    .island {
+        position: absolute;
+        display: block;
+        top: 300px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: calc(93px * var(--island-size));
+        height: calc(111px * var(--island-size));
+        background-size: calc(93px * var(--island-size)) calc(111px * var(--island-size));
+        background-image: url(gif/island.gif);
+        z-index: 5;
+    }
+
+
+    /* ************************************************************************************************* */
+    /* *                                         ABOUT (level1)                                        * */
+    /* ************************************************************************************************* */
+
+    .mobile-about {
+        position: absolute;
+        width: calc(95px * var(--mobileAbout-size));
+        height: calc(44px * var(--mobileAbout-size));
+        top: 1200px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-image: url(images/aboutMe.png);
+        background-size: calc(95px * var(--mobileAbout-size)) calc(44px * var(--mobileAbout-size));
+        z-index: 7;
+    }
+
+    .portalCliffAbout {
+        position: absolute;
+        top: 1400px;
+        width: calc(82px * var(--cliff-size));
+        height: calc(82px * var(--cliff-size));
+        background-image: url(images/purpleCliff.png);
+        background-size: calc(82px * var(--cliff-size)) calc(84px * var(--cliff-size));
+        z-index: 3;
+
+    }
+
+    .skatePlank {
+        position: absolute;
+        top: 2300px;
+        right: 0;
+        width: calc(95px * var(--plankSkate-size));
+        height: calc(70px * var(--plankSkate-size));
+        background-image: url(images/skateMobile.png);
+        background-size: calc(95px * var(--plankSkate-size)) calc(70px * var(--plankSkate-size));
+        z-index: 3;
+
+    }
+
+    .favFood-mobile {
+        position: absolute;
+        top: 2900px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: calc(113px * var(--foodSign-size));
+        height: calc(38px * var(--foodSign-size));
+        background-image: url(gif/mobileFoodSign.gif);
+        background-size: calc(113px * var(--foodSign-size)) calc(38px * var(--foodSign-size));
+        z-index: 8;
+    }
+
+    .sushiStand-mobile {
+        position: absolute;
+        top: 3400px;
+        right: 0;
+        width: calc(95px * var(--foodStand-size));
+        height: calc(84px * var(--foodStand-size));
+        background-image: url(images/sushistand-mobile.png);
+        background-size: calc(95px * var(--foodStand-size)) calc(84px * var(--foodStand-size));
+        z-index: 3;
+
+    }
+
+    .tacoTruck-mobile {
+        position: absolute;
+        top: 4000px;
+        right: 0;
+        width: calc(95px * var(--foodStand-size));
+        height: calc(83px * var(--foodStand-size));
+        background-image: url(images/tacoTruck-mobile.png);
+        background-size: calc(95px * var(--foodStand-size)) calc(83px * var(--foodStand-size));
+        z-index: 3;
+
+    }
+
+    /* ************************************************************************************************* */
+    /* *                                         SKILLS (level2)                                       * */
+    /* ************************************************************************************************* */
+    .mobile-skills {
+        position: absolute;
+        width: calc(101px * var(--mobileSkills-size));
+        height: calc(21px * var(--mobileSkills-size));
+        top: 4700px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-image: url(images/skillsText.png);
+        background-size: calc(101px * var(--mobileSkills-size)) calc(21px * var(--mobileSkills-size));
+        z-index: 7;
+    }
+
+    .portalCliffSkills {
+        position: absolute;
+        top: 4900px;
+        width: calc(82px * var(--cliff-size));
+        height: calc(82px * var(--cliff-size));
+        background-image: url(images/greenCliff.png);
+        background-size: calc(82px * var(--cliff-size)) calc(84px * var(--cliff-size));
+        z-index: 3;
+
+    }
+
+
+
+    /* ************************************************************************************************* */
+    /* *                                          WOLKEN-MOBILE                                        * */
+    /* ************************************************************************************************* */
+    #wolken-mobile {
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .wolk {
+        position: absolute;
+        width: calc(290px * var(--mobile-wolk));
+        height: calc(160px * var(--mobile-wolk));
+        background-image: url(images/wolk.png);
+        background-size: 290px 160px;
+        background-size: calc(290px * var(--mobile-wolk)) calc(160px * var(--mobile-wolk));
+    }
+
+    .een-mobile {
+        top: 100px;
+        left: 15vw;
+    }
+
+    .twee-mobile {
+        top: 300px;
+        right: 10vw;
+    }
+
+    .drie-mobile {
+        top: 800px;
+        left: 5vw;
+    }
+
+    .vier-mobile {
+        top: 1100px;
+        left: 60vw;
+    }
+
+    .vijf-mobile {
+        top: 1700px;
+        left: 20vw;
+    }
+
+    /* PARALLAX */
+
+}

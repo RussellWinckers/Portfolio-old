@@ -1,11 +1,12 @@
 * {
     image-rendering: pixelated;
-    cursor: url(images/sushiCursor.png),auto;
+    cursor: url(images/sushiCursor.png), auto;
 }
 
-#mCharacter{
+#mCharacter {
     display: none;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -46,7 +47,7 @@ body {
 
 /* Player */
 :root {
-    
+
     --backgroundTowers-size: 7;
     --purpleTower-size: 0;
     --mountain-size: 9;
@@ -57,7 +58,7 @@ body {
     --portal-size: 10;
     --boom-size: 8;
     --bos-size: 5;
-    --balon-size:  5;
+    --balon-size: 5;
     --skateLoop-size: 8;
     --billBoard-size: 7;
     --foodStand-size: 7;
@@ -68,10 +69,10 @@ body {
     --skills-size: 6;
     --woodenSign2-size: 8;
     --talenLijst-size: 8;
-    --palmTree-size: 9; 
+    --palmTree-size: 9;
     --truck-size: 15;
     --factory-size: 10;
-    
+
 
     /* Projects */
     --projectSign-size: 7;
@@ -123,7 +124,7 @@ body {
 }
 
 /* ////////////////////////////////////////////////////////////// ALGEMEEN LAYER */
-#uitleg{
+#uitleg {
     display: none;
     position: absolute;
     z-index: 100;
@@ -135,6 +136,7 @@ body {
     font-weight: 600;
     transform: translate(-50%, -50%);
 }
+
 .layers {
     z-index: 5;
     position: relative;
@@ -161,7 +163,8 @@ body {
     bottom: 0;
     background-image: url(images/gras.png);
 }
-.grond2{
+
+.grond2 {
     position: absolute;
     width: 290vw;
     height: 170px;
@@ -169,7 +172,8 @@ body {
     left: 137vw;
     background-image: url(images/purpleGras.png);
 }
-.grond3{
+
+.grond3 {
     position: absolute;
     width: 350vw;
     height: 170px;
@@ -177,7 +181,8 @@ body {
     left: 427vw;
     background-image: url(images/streetGround.png);
 }
-.grond4{
+
+.grond4 {
     position: absolute;
     width: 300vw;
     height: 170px;
@@ -185,7 +190,8 @@ body {
     left: 777vw;
     background-image: url(images/iceGrond.png);
 }
-.grond5{
+
+.grond5 {
     position: absolute;
     width: 160vw;
     height: 170px;
@@ -195,7 +201,7 @@ body {
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////// BOOM en BOS*/
-.boomGroen{
+.boomGroen {
     position: absolute;
     background-image: url(images/greenTree.png);
     width: calc(30px * var(--boom-size));
@@ -204,10 +210,12 @@ body {
     bottom: 170px;
     background-size: calc(30px * var(--boom-size)) calc(52px * var(--boom-size));
 }
-.boomEen{
+
+.boomEen {
     left: 65vw;
 }
-.bosGroen{
+
+.bosGroen {
     position: absolute;
     background-image: url(images/greenBosje.png);
     width: calc(18px * var(--bos-size));
@@ -216,7 +224,8 @@ body {
     bottom: 170px;
     background-size: calc(18px * var(--bos-size)) calc(14px * var(--bos-size));
 }
-.bosEen{
+
+.bosEen {
     left: 30vw;
 }
 
@@ -236,7 +245,8 @@ body {
     background-size: calc(145px * var(--name-size)) calc(41px * var(--name-size));
     z-index: 7;
 }
-#welcomeText:hover{
+
+#welcomeText:hover {
     cursor: pointer;
 }
 
@@ -253,8 +263,9 @@ body {
     background-repeat: no-repeat;
     background-size: calc(131px * var(--name-size)) calc(44px * var(--name-size));
 }
+
 /* ////////////////////////////////////////////////////////////////////////////////////// ABOUT ME */
-.textAbout{
+.textAbout {
     position: absolute;
     width: calc(95px * var(--aboutme-size));
     height: calc(44px * var(--aboutme-size));
@@ -264,7 +275,8 @@ body {
     background-size: calc(95px * var(--aboutme-size)) calc(44px * var(--aboutme-size));
     z-index: 7;
 }
-.boomPaars{
+
+.boomPaars {
     position: absolute;
     background-image: url(images/purpleTree.png);
     width: calc(30px * var(--boom-size));
@@ -272,10 +284,10 @@ body {
     background-repeat: no-repeat;
     bottom: 170px;
     left: 166vw;
-    background-size: calc(30px * var(--boom-size)) calc(52px * var(--boom-size)); 
+    background-size: calc(30px * var(--boom-size)) calc(52px * var(--boom-size));
 }
 
-.skateLoop{
+.skateLoop {
     position: absolute;
     width: calc(140px * var(--skateLoop-size));
     height: calc(35px * var(--skateLoop-size));
@@ -285,7 +297,8 @@ body {
     background-size: calc(140px * var(--skateLoop-size)) calc(35px * var(--skateLoop-size));
     z-index: 5;
 }
-.billBoardSkate{
+
+.billBoardSkate {
     position: absolute;
     width: calc(51px * var(--billBoard-size));
     height: calc(71px * var(--billBoard-size));
@@ -294,8 +307,9 @@ body {
     background-image: url(images/skateBillBoard.png);
     background-size: calc(51px * var(--billBoard-size)) calc(71px * var(--billBoard-size));
 }
+
 /* ///////////// Food */
-.foodText{
+.foodText {
     position: absolute;
     width: calc(87px * var(--favFood-size));
     height: calc(34px * var(--favFood-size));
@@ -304,7 +318,8 @@ body {
     background-image: url(images/woodenSign.png);
     background-size: calc(87px * var(--favFood-size)) calc(34px * var(--favFood-size));
 }
-.sushiStand{
+
+.sushiStand {
     position: absolute;
     width: calc(80px * var(--foodStand-size));
     height: calc(60px * var(--foodStand-size));
@@ -313,7 +328,8 @@ body {
     background-image: url(images/sushiStand.png);
     background-size: calc(80px * var(--foodStand-size)) calc(60px * var(--foodStand-size));
 }
-.tacoStand{
+
+.tacoStand {
     position: absolute;
     width: calc(80px * var(--foodStand-size));
     height: calc(60px * var(--foodStand-size));
@@ -325,7 +341,7 @@ body {
 
 
 /* ///////////////////////////////////////////////////////////////////////////////////// SKILLS */
-.directionSign{
+.directionSign {
     position: absolute;
     width: calc(28px * var(--directionSign-size));
     height: calc(39px * var(--directionSign-size));
@@ -335,7 +351,7 @@ body {
     background-size: calc(28px * var(--directionSign-size)) calc(39px * var(--directionSign-size));
 }
 
-.textSkills{
+.textSkills {
     position: absolute;
     width: calc(101px * var(--skills-size));
     height: calc(21px * var(--skills-size));
@@ -345,7 +361,8 @@ body {
     background-size: calc(101px * var(--skills-size)) calc(21px * var(--skills-size));
     z-index: 7;
 }
-.skillsBoom{
+
+.skillsBoom {
     position: absolute;
     background-image: url(images/skillsBoom.png);
     width: calc(30px * var(--boom-size));
@@ -355,7 +372,8 @@ body {
     left: 455vw;
     background-size: calc(30px * var(--boom-size)) calc(52px * var(--boom-size));
 }
-.languageSign{
+
+.languageSign {
     position: absolute;
     width: calc(65px * var(--woodenSign2-size));
     height: calc(60px * var(--woodenSign2-size));
@@ -364,7 +382,8 @@ body {
     background-image: url(images/woodenSignLanguage.png);
     background-size: calc(65px * var(--woodenSign2-size)) calc(60px * var(--woodenSign2-size));
 }
-.talenLijst{
+
+.talenLijst {
     position: absolute;
     width: calc(292px * var(--talenLijst-size));
     height: calc(43px * var(--talenLijst-size));
@@ -373,7 +392,8 @@ body {
     background-image: url(images/TalenLijst.png);
     background-size: calc(292px * var(--talenLijst-size)) calc(43px * var(--talenLijst-size));
 }
-.designText{
+
+.designText {
     position: absolute;
     width: calc(43px * var(--woodenSign2-size));
     height: calc(68px * var(--woodenSign2-size));
@@ -382,7 +402,8 @@ body {
     background-image: url(images/designSign.png);
     background-size: calc(43px * var(--woodenSign2-size)) calc(68px * var(--woodenSign2-size));
 }
-.designLijst{
+
+.designLijst {
     position: absolute;
     width: calc(91px * var(--talenLijst-size));
     height: calc(40px * var(--talenLijst-size));
@@ -394,7 +415,7 @@ body {
 
 
 /* ///////////////////////////////////////////////////////////////////////////////////// Projects*/
-.textProjects{
+.textProjects {
     position: absolute;
     width: calc(150px * var(--skills-size));
     height: calc(21px * var(--skills-size));
@@ -404,7 +425,8 @@ body {
     background-size: calc(150px * var(--skills-size)) calc(21px * var(--skills-size));
     z-index: 7;
 }
-.project{
+
+.project {
     position: absolute;
     width: calc(100px * var(--projectSign-size));
     height: calc(100px * var(--projectSign-size));
@@ -412,34 +434,42 @@ body {
     background-image: url(images/projectSign.png);
     background-size: calc(100px * var(--projectSign-size)) calc(100px * var(--projectSign-size));
 }
-.projectEen{
+
+.projectEen {
     left: 850vw;
 }
-.projectTwee{
+
+.projectTwee {
     left: 900vw;
 }
-.projectDrie{
+
+.projectDrie {
     left: 950vw;
 }
-.projectVier{
+
+.projectVier {
     left: 1000vw;
 }
-.projectFrame{
+
+.projectFrame {
     margin: 250px 4%;
     height: 55%;
     width: 90%;
     /* background-color: #7c4931; */
 }
+
 @font-face {
     font-family: font;
     src: url(fonts/LemonMilkLightItalic-7BjPE.otf);
 }
-.projectFrame > p{
+
+.projectFrame>p {
     margin: 0 40px;
     font-size: 20px;
     font-family: font;
 }
-.projectFrame > img{
+
+.projectFrame>img {
     image-rendering: auto;
     border: 5px solid;
     position: relative;
@@ -448,25 +478,29 @@ body {
     font-size: 20px;
     font-family: font;
 }
-.projectFrame > div{
+
+.projectFrame>div {
     position: absolute;
     right: 70px;
     margin: -60px 0;
     background-color: #583423;
     border: 2px solid #31190e;
     padding: 5px;
-    box-shadow: 5px 5px 0px 0px  #422619;
+    box-shadow: 5px 5px 0px 0px #422619;
 
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-family: font;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
 }
-.titel{
+
+.titel {
     font-family: font;
     position: relative;
     top: 30px;
@@ -476,7 +510,7 @@ a:hover{
 
 
 /* Level 4 (Contact) */
-.contactText{
+.contactText {
     position: absolute;
     width: calc(131px * var(--skills-size));
     height: calc(44px * var(--skills-size));
@@ -486,7 +520,8 @@ a:hover{
     background-size: calc(131px * var(--skills-size)) calc(44px * var(--skills-size));
     z-index: 7;
 }
-.finish{
+
+.finish {
     position: absolute;
     width: calc(42px * var(--finish-size));
     height: calc(54px * var(--finish-size));
@@ -495,7 +530,8 @@ a:hover{
     background-image: url(images/finishFlag.png);
     background-size: calc(42px * var(--finish-size)) calc(54px * var(--finish-size));
 }
-.cactus{
+
+.cactus {
     position: absolute;
     width: calc(26px * var(--finish-size));
     height: calc(37px * var(--finish-size));
@@ -504,7 +540,8 @@ a:hover{
     background-image: url(images/cactus.png);
     background-size: calc(26px * var(--finish-size)) calc(37px * var(--finish-size));
 }
-.contact{
+
+.contact {
     position: absolute;
     width: calc(100px * var(--projectSign-size));
     height: calc(100px * var(--projectSign-size));
@@ -518,42 +555,21 @@ a:hover{
     font-family: font;
     text-align: center;
 }
-.contactForm{
-    width: 80%;
-    margin: 35% auto;
-}
-.contactForm > div > h1{
-    font-size: 25px;
-    padding: 0 !important;
-    text-align: center;
-    margin: 5px 0 0 0;
-}
-.contactForm > div{
-    padding: 5px;
-    text-align: left;
-}
-.contactForm > div > input, textarea{
+
+/* Contact Form */
+.contact-info {
     position: relative;
-    width: 100%;
-    background-color: #814a31;
-    box-shadow: 5px 5px 0px 0px  #422619;
-    border: 3px solid #31190e !important;    
-    height: 30px;
-    border: none;
-    font-family: font;
-}
-.message{
-    height: 100px !important;
-}
-.contactForm > div > input:hover{
-    cursor: pointer;
-}
-.submitContact{
-    margin: 30px auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 60%;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* ///////////////////////////////////////////////////////////////// Portals */
-.portal1{
+.portal1 {
     position: absolute;
     width: calc(26px * var(--portal-size));
     height: calc(40px * var(--portal-size));
@@ -563,7 +579,8 @@ a:hover{
     bottom: 170px;
     left: 130vw;
 }
-.portal2{
+
+.portal2 {
     position: absolute;
     width: calc(26px * var(--portal-size));
     height: calc(40px * var(--portal-size));
@@ -573,7 +590,8 @@ a:hover{
     bottom: 170px;
     left: 420vw;
 }
-.portal3{
+
+.portal3 {
     position: absolute;
     width: calc(26px * var(--portal-size));
     height: calc(40px * var(--portal-size));
@@ -583,7 +601,8 @@ a:hover{
     bottom: 170px;
     left: 770vw;
 }
-.portal4{
+
+.portal4 {
     position: absolute;
     width: calc(26px * var(--portal-size));
     height: calc(40px * var(--portal-size));
@@ -616,7 +635,7 @@ a:hover{
 }
 
 /* mountains */
-.mountainEen{
+.mountainEen {
     position: absolute;
     left: 90vw;
     bottom: 170px;
@@ -626,7 +645,8 @@ a:hover{
     background-repeat: no-repeat;
     background-size: calc(140px * var(--mountain-size)) calc(66px * var(--mountain-size));
 }
-.mountainTwee{
+
+.mountainTwee {
     position: absolute;
     left: 230vw;
     bottom: 170px;
@@ -636,6 +656,7 @@ a:hover{
     background-repeat: no-repeat;
     background-size: calc(140px * var(--mountain-size)) calc(66px * var(--mountain-size));
 }
+
 /* backgroundTowers */
 .towersGem {
     position: absolute;
@@ -646,8 +667,9 @@ a:hover{
     background-image: url(images/gemBackground.png);
     background-size: calc(62px * var(--backgroundTowers-size)) calc(83px * var(--backgroundTowers-size));
 }
+
 /* factory */
-.factory1{
+.factory1 {
     position: absolute;
     left: 450vw;
     bottom: 170px;
@@ -656,7 +678,8 @@ a:hover{
     background-image: url(images/factory.png);
     background-size: calc(115px * var(--factory-size)) calc(93px * var(--factory-size));
 }
-.palmTree{
+
+.palmTree {
     position: absolute;
     left: 400vw;
     bottom: 170px;
@@ -669,7 +692,7 @@ a:hover{
 
 /* Ice mountians */
 
-.igloo{
+.igloo {
     position: absolute;
     left: 610vw;
     bottom: 170px;
@@ -678,7 +701,8 @@ a:hover{
     background-image: url(images/igloo.png);
     background-size: calc(86px * var(--igloo-size)) calc(47px * var(--igloo-size));
 }
-.iceMountainEen{
+
+.iceMountainEen {
     position: absolute;
     left: 680vw;
     bottom: 170px;
@@ -687,7 +711,8 @@ a:hover{
     background-image: url(images/iceMountain1.png);
     background-size: calc(118px * var(--iceMountainEen-size)) calc(100px * var(--iceMountainEen-size));
 }
-.iceMountainTwee{
+
+.iceMountainTwee {
     position: absolute;
     left: 760vw;
     bottom: 170px;
@@ -699,7 +724,7 @@ a:hover{
 
 
 /* DesertMountain */
-.desertMountain{
+.desertMountain {
     position: absolute;
     left: 830vw;
     bottom: 170px;
@@ -716,7 +741,8 @@ a:hover{
     height: 100vh;
     z-index: 6;
 }
-.factoryTruck{
+
+.factoryTruck {
     position: absolute;
     left: 415vw;
     bottom: 170px;
@@ -725,7 +751,8 @@ a:hover{
     background-image: url(images/factoryTruck.png);
     background-size: calc(40px * var(--truck-size)) calc(26px * var(--truck-size));
 }
-.factoryCar{
+
+.factoryCar {
     position: absolute;
     left: 500vw;
     bottom: 170px;
@@ -734,7 +761,8 @@ a:hover{
     background-image: url(images/car.png);
     background-size: calc(15px * var(--truck-size)) calc(7px * var(--truck-size));
 }
-.factoryTruck2{
+
+.factoryTruck2 {
     position: absolute;
     left: 600vw;
     bottom: 170px;
@@ -743,6 +771,7 @@ a:hover{
     background-image: url(images/factoryTruck.png);
     background-size: calc(40px * var(--truck-size)) calc(26px * var(--truck-size));
 }
+
 /* ////////////////////////////////////////////////////////////// WOLKEN LAYER */
 
 
@@ -763,42 +792,50 @@ a:hover{
     top: 200px;
     left: 30vw;
 }
-.twee{
+
+.twee {
     top: 300px;
     left: 90vw;
 }
-.drie{
+
+.drie {
     top: 150px;
     left: 130vw;
 }
-.vier{
+
+.vier {
     top: 200px;
     left: 200vw;
 }
-.vijf{
+
+.vijf {
     top: 100px;
     left: 240vw;
 }
-.zes{
+
+.zes {
     top: 230px;
     left: 300vw;
 }
-.zeven{
+
+.zeven {
     top: 150px;
     left: 350vw;
 }
-.acht{
+
+.acht {
     top: 300px;
     left: 400vw;
 }
-.negen{
+
+.negen {
     top: 150px;
     left: 460vw;
 }
 
 
 /* 1600px */
-@media only screen and (max-width: 1600px){
+@media only screen and (max-width: 1600px) {
     :root {
         --backgroundTowers-size: 7/1.4;
         --purpleTower-size: 0/1.4;
@@ -810,134 +847,107 @@ a:hover{
         --portal-size: 10/1.4;
         --boom-size: 8/1.4;
         --bos-size: 5/1.4;
-        --balon-size:  5/1.4;
+        --balon-size: 5/1.4;
         --skateLoop-size: 8/1.4;
         --billBoard-size: 7/1.4;
         --foodStand-size: 7/1.4;
         --favFood-size: 8/1.4;
-    
+
         --directionSign-size: 7/1.4;
-        
+
 
         --skills-size: 6/1.4;
         --woodenSign2-size: 8/1.4;
         --talenLijst-size: 8/1.4;
-        --palmTree-size: 9/1.4; 
+        --palmTree-size: 9/1.4;
         --truck-size: 15/1.4;
         --factory-size: 10/1.4;
-        
-    
+
+
         --projectSign-size: 7/1.4;
         --iceMountainEen-size: 7/1.4;
         --igloo-size: 6/1.4;
-    
+
         --desertMountain-size: 9/1.4;
         --finish-size: 6/1.4;
 
-        
-    }
-    .negen{
-            top: 150px;
-            left: 460vw;
-            display: none;
-        }
 
-        /* Project frame */
-        .projectFrame{
-            margin: 190px 4%;
-            height: 55%;
-            width: 90%;
-            /* background-color: #7c4931; */
-        }
-        @font-face {
-            font-family: font;
-            src: url(fonts/LemonMilkLightItalic-7BjPE.otf);
-        }
-        .projectFrame > p{
-            margin: 0 40px;
-            font-size: 14px;
-            font-family: font;
-        }
-        .projectFrame > img{
-            image-rendering: auto;
-            border: 5px solid;
-            position: relative;
-            width: 60%;
-            margin: 10px 40px;
-            font-size: 20px;
-            font-family: font;
-        }
-        .projectFrame > div{
-            position: absolute;
-            right: 70px;
-            margin: -42px -20px 0 0;
-            background-color: #583423;
-            border: 2px solid #31190e;
-            padding: 3px;
-            box-shadow: 5px 5px 0px 0px  #422619;
-        
-        }
-        a{
-            font-size: 12px;
-            text-decoration: none;
-            color: white;
-            font-family: font;
-        }
-        a:hover{
-            cursor: pointer;
-        }
-        .titel{
-            font-family: font;
-            position: relative;
-            top: 15px;
-            text-align: center;
-            font-size: 20px;
-        }
-        
-        
-        /* Contact Form */
-        .contactForm{
-            width: 80%;
-            margin: 35% 40px;
-        }
-        .contactForm > div > h1{
-            font-size: 15px;
-            padding: 10px 0 0 0!important;
-            text-align: center;
-            margin: 5px 0 0 0;
-        }
-        .contactForm > div{
-            padding: 0px;
-            text-align: left;
-        }
-        .contactForm > div > input, textarea{
-            position: relative;
-            width: 100%;
-            background-color: #814a31;
-            box-shadow: 5px 5px 0px 0px  #422619;
-            border: 3px solid #31190e !important;    
-            height: 30px;
-            border: none;
-            font-family: font;
-        }
-        .message{
-            height: 50px !important;
-        }
-        .contactForm > div > input:hover{
-            cursor: pointer;
-        }
-        .submitContact{
-            margin: 20px auto !important;
-        }
-        label{
-            font-size: 10px;
-        }
+    }
+
+    .negen {
+        top: 150px;
+        left: 460vw;
+        display: none;
+    }
+
+    /* Project frame */
+    .projectFrame {
+        margin: 190px 4%;
+        height: 55%;
+        width: 90%;
+        /* background-color: #7c4931; */
+    }
+
+    @font-face {
+        font-family: font;
+        src: url(fonts/LemonMilkLightItalic-7BjPE.otf);
+    }
+
+    .projectFrame>p {
+        margin: 0 40px;
+        font-size: 14px;
+        font-family: font;
+    }
+
+    .projectFrame>img {
+        image-rendering: auto;
+        border: 5px solid;
+        position: relative;
+        width: 60%;
+        margin: 10px 40px;
+        font-size: 20px;
+        font-family: font;
+    }
+
+    .projectFrame>div {
+        position: absolute;
+        right: 70px;
+        margin: -42px -20px 0 0;
+        background-color: #583423;
+        border: 2px solid #31190e;
+        padding: 3px;
+        box-shadow: 5px 5px 0px 0px #422619;
+
+    }
+
+    a {
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+        font-family: font;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    .titel {
+        font-family: font;
+        position: relative;
+        top: 15px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+
 
 
 }
-@media only screen and (max-width: 1250px){
+
+@media only screen and (max-width: 1250px) {
     :root {
         --desertMountain-size: 9/1.7;
-        
+
     }
 }
